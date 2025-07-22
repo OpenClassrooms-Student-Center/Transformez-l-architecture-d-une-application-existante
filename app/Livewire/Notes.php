@@ -18,6 +18,7 @@ class Notes extends Component
         'text' => 'required|string',
         'tag_id' => 'required|exists:tags,id',
     ];
+    protected $listeners = ['tagCreated' => 'refreshTags'];
 
     public function mount()
     {
@@ -28,6 +29,11 @@ class Notes extends Component
     public function loadNotes()
     {
         $this->notes = Note::with('tag')->where('user_id', Auth::id())->latest()->get();
+    }
+
+    public function refreshTags()
+    {
+        $this->tags = \App\Models\Tag::all();
     }
 
     public function save()
