@@ -21,6 +21,4 @@ Route::middleware(['auth'])->group(function () {
     Route::view('/notes', 'dashboard');
 });
 
-Route::resource('notes', NoteController::class);
-
 require __DIR__.'/auth.php';
