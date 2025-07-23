@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Tag;
@@ -21,7 +21,7 @@ class TagForm extends Component
 
         $this->reset('name');
 
-        $this->emit('tagCreated');
+        $this->dispatch('tagCreated');
 
         session()->flash('message', 'Tag added!');
     }
