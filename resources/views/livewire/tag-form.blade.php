@@ -1,9 +1,11 @@
-<div class="space-y-2">
+<div class="space-y-4">
     @if (session()->has('message'))
         <div class="text-green-600 text-sm">{{ session('message') }}</div>
     @endif
 
-    <form wire:submit.prevent="save" class="flex gap-2 items-center">
+    <h2 class="text-xl font-bold">Add a tag</h2>
+
+    <form wire:submit.prevent="save" class="space-y-2">
         <input type="text" wire:model="name" placeholder="New tag name"
                class="border rounded px-3 py-1 text-sm w-full" />
         <button type="submit" class="bg-blue-500 text-white px-4 py-2">
