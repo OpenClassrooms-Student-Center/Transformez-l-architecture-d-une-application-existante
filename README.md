@@ -1,5 +1,15 @@
 # Transformez l'architecture d'une application existante
 
+# Plot
+
+Renote is an application that allows user to take and store notes.
+In renote, a user can:
+- create notes
+- visualize notes
+- define relationship between the notes
+- define tags
+- and associate a tag to a note.
+
 ## Install
 
 1. Install Laravel's Herd:
