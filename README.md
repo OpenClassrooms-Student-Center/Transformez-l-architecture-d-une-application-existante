@@ -28,8 +28,10 @@ https://github.com/coreybutler/nvm-windows#readme
 
 4. Run `npm i` and `npm run dev`
 
-5. Start Herd
+5. Run `php artisan migrate`
 
-6. Access `http://monolithic-app.test` from your browser
+6. Start Herd
+
+7. Access to Herd link from your browser
 
 You are setup!
