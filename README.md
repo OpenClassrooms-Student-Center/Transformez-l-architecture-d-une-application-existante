@@ -26,12 +26,16 @@ https://github.com/coreybutler/nvm-windows#readme
 
 3. Clone this project
 
-4. Run `npm i` and `npm run dev`
+4. Copy `.env.example` to `.env`
 
-5. Run `php artisan migrate`
+5. Generate new APP_KEY with `php artisan key:generate`
 
-6. Start Herd
+6. Run `npm i` and `npm run dev`
 
-7. Access to Herd link from your browser
+7. Run `php artisan migrate`
+
+8. Start Herd
+
+9. Access to Herd link from your browser
 
 You are setup!
